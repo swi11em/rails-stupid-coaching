@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <h1 class="mb-4">Stupid Coaching</h1>
+
+  <div class="mb-3">
+    <blockquote class="blockquote d-flex flex-column justify-content-center">
+      <p class="mb-0"><%= params[:coach] %></p>
+      <footer class="blockquote-footer py-3">You</footer>
+    </blockquote>
+  </div>
+
+  <div class="alert alert-warning d-flex flex-column justify-content-center">
+    <strong><%= @answer %></strong>
+    <footer class="blockquote-footer py-3">Your coach</footer>
+  </div>
+
+  <div class="mt-3">
+    <%= link_to 'ask a new question', ask_path %>
+  </div>
+</div>
